@@ -1,0 +1,52 @@
+ItemKind	ItemName	Location_Column	Location_Row	Required	InputMode	MaxLength	Tips	Enabled	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	MultiLine	ForeColor	Visible	Input2	IsPostCd	Address1	Address2	Address3	AddressKana1	AddressKana2	AddressKana3	IsAgencyCd	HandlerCd	AgencyName	Handler_Last_Name	Handler_First_Name	Alignment
+G		2	1							ＤＭ会員番号	865	900		001		T	1																	
+L		2	1							①			001																					
+L		2	2.5							②			001																					
+L		2	4							③			001																					
+L		2	5.5							④			001																					
+L		2	7							⑤			001																					
+L		2	8.5							⑥			001																					
+L		2	10							⑦			001																					
+L		2	11.5							⑧			001																					
+L		2	13							⑨			001																					
+L		2	14.5							⑩			001																					
+L		2	16							⑪			001																					
+L		2	17.5							⑫			001																					
+L		2	19							⑬			001																					
+L		2	20.5							⑭			001																					
+L		2	22							⑮			001																					
+L		2	23.5							⑯			001																					
+L		2	25							⑰			001																					
+L		2	26.5							⑱			001																					
+L		2	28							⑲			001																					
+L		2	29.5							⑳			001																					
+L		2	31							㉑			001																					
+L		2	32.5							㉒			001																					
+L		2	34							㉓			001																					
+L		2	35.5							㉔			001																					
+L		2	37							㉕			001																					
+T	①	6	1		X	7		T					001		^\d	T	2																	
+T	②	6	2.5		X	7		T					001		^\d	T	3																	
+T	③	6	4		X	7		T					001		^\d	T	4																	
+T	④	6	5.5		X	7		T					001		^\d	T	5																	
+T	⑤	6	7		X	7		T					001		^\d	T	6																	
+T	⑥	6	8.5		X	7		T					001		^\d	T	7																	
+T	⑦	6	10		X	7		T					001		^\d	T	8																	
+T	⑧	6	11.5		X	7		T					001		^\d	T	9																	
+T	⑨	6	13		X	7		T					001		^\d	T	10																	
+T	⑩	6	14.5		X	7		T					001		^\d	T	11																	
+T	⑪	6	16		X	7		T					001		^\d	T	12																	
+T	⑫	6	17.5		X	7		T					001		^\d	T	13																	
+T	⑬	6	19		X	7		T					001		^\d	T	14																	
+T	⑭	6	20.5		X	7		T					001		^\d	T	15																	
+T	⑮	6	22		X	7		T					001		^\d	T	16																	
+T	⑯	6	23.5		X	7		T					001		^\d	T	17																	
+T	⑰	6	25		X	7		T					001		^\d	T	18																	
+T	⑱	6	26.5		X	7		T					001		^\d	T	19																	
+T	⑲	6	28		X	7		T					001		^\d	T	20																	
+T	⑳	6	29.5		X	7		T					001		^\d	T	21																	
+T	㉑	6	31		X	7		T					001		^\d	T	22																	
+T	㉒	6	32.5		X	7		T					001		^\d	T	23																	
+T	㉓	6	34		X	7		T					001		^\d	T	24																	
+T	㉔	6	35.5		X	7		T					001		^\d	T	25																	
+T	㉕	6	37		X	7		T					001		^\d	T	26																	

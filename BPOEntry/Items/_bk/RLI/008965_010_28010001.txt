@@ -1,0 +1,32 @@
+﻿ItemKind	ItemName	Location_Column	Location_Row	Required	InputMode	MaxLength	Tips	Enabled	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	MultiLine	ForeColor	Visible	Input2	IsPostCd	Address1	Address2	Address3	AddressKana1	AddressKana2	AddressKana3	IsAgencyCd	HandlerCd	AgencyName	Handler_Last_Name	Handler_First_Name	Alignment
+G		2	1							復活請求書	850	900		001		T	1																	
+L		1	1							証券番号１：			001																					
+L		1	3							証券番号２：			001																					
+L		1	5							証券番号３：			001																					
+L		1	7							証券番号４：			001																					
+L		1	9							証券番号５：			001																					
+L		1	11							証券番号６：			001																					
+L		1	13							証券番号７：			001																					
+L		1	15							証券番号８：			001																					
+L		1	17							証券番号９：			001																					
+L		1	19							証券番号１０：			001																					
+L		1	21							証券番号１１：			001																					
+L		1	23							証券番号１２：			001																					
+L		1	25							証券番号１３：			001																					
+L		1	27							証券番号１４：			001																					
+L		1	29							証券番号１５：			001																					
+T	証券番号１	36	1		X	8		T					001		^[0-9]$	T	2																	
+T	証券番号２	36	3		X	8		T					001		^[0-9]$	T	3																	
+T	証券番号３	36	5		X	8		T					001		^[0-9]$	T	4																	
+T	証券番号４	36	7		X	8		T					001		^[0-9]$	T	5																	
+T	証券番号５	36	9		X	8		T					001		^[0-9]$	T	6																	
+T	証券番号６	36	11		X	8		T					001		^[0-9]$	T	7																	
+T	証券番号７	36	13		X	8		T					001		^[0-9]$	T	8																	
+T	証券番号８	36	15		X	8		T					001		^[0-9]$	T	9																	
+T	証券番号９	36	17		X	8		T					001		^[0-9]$	T	10																	
+T	証券番号１０	36	19		X	8		T					001		^[0-9]$	T	11																	
+T	証券番号１１	36	21		X	8		T					001		^[0-9]$	T	12																	
+T	証券番号１２	36	23		X	8		T					001		^[0-9]$	T	13																	
+T	証券番号１３	36	25		X	8		T					001		^[0-9]$	T	14																	
+T	証券番号１４	36	27		X	8		T					001		^[0-9]$	T	15																	
+T	証券番号１５	36	29		X	8		T					001		^[0-9]$	T	19																	

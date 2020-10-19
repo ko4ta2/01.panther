@@ -1,0 +1,11 @@
+ItemKind	ItemName	Location_Row	Location_Column	Required	InputMode	DefaultImeMode	MaxLength	Tips	Enabled	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	ForeColor	Visible	Alignment	Square	MasterCheck	FullLength	CharacterCasing
+T	カナ氏名			T	KF		100		T	^[ァアィイゥウェエォオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロヮワヰヱヲンヴヵヶー]*$							T	1							
+T	漢字氏名			T	N		80		T								T	2							
+T	生年月日			T	X		8		T							\d	T	3				T		T	
+T	カード種別				X		1	1：一般\n2：ゴールド	T	^(|1|2)$						\d	T	4				T			
+T	カード契約番号				X		16		T							\d	T	5				T		T	
+T	県コード			T	X		2		T							\d	T	6				T	T	T	
+T	金融機関番号			T	X		4		T							\d	T	7				T		T	
+T	顧客番号			T	X		10		T							\d	T	8				T			
+T	部店コード			T	X		4		T							\d	T	9				T		T	
+T	口座番号			T	X		8		T							\d	T	10				T			

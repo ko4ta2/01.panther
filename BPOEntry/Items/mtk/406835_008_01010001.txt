@@ -1,0 +1,9 @@
+ItemKind	ItemName	Location_Row	Location_Column	Required	InputMode	MaxLength	Tips	Enabled	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	MultiLine	ForeColor	Visible	Input2	IsPostCd	Address	AddressKana	IsAgencyCd	HandlerCd	AgencyName	Handler_Last_Name	Handler_First_Name	Alignment	CharacterCasing	Square
+T	記入日	1	1	01010001	X	8		T							^\d	T	1															T
+T	支店名	1	1		H	10	記入がある場合は"店"も入力	T								T	2															
+T	店番号	1	1		X	3		T							^\d	T	3															T
+T	貸金庫番号	1	1		X	4		T							^\d	T	4															T
+T	ａ(本人・代理人区分)	1	1		X	1		T	^(|[0-9]{1})$						^\d	T	5															
+T	ｂ(カード世代コード)	1	1		X	1		T							^\d	T	6															
+T	CIF番号	1	1		X	10		T							^\d	T	7															T
+T	カナ氏名	1	1		KH	19		T							^[ｱ-ﾝｦ-ｯ ﾟﾞ()ｰ]*$	T	8															T

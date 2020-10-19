@@ -1,0 +1,5 @@
+TYPE	METHOD_NAME	ITEM_1	ITEM_2	ITEM_3	ITEM_4	ITEM_5	ITEM_6	ITEM_7	OUT_1	OUT_2	OUT_3	OUT_4	OUT_5	OUT_6	OUT_7	TRIGGER_ITEM	PARAMETER_ORDER	IsCOLNAME	PARAMCNT	TARGET_DOC_ID
+	GetAddressInfoForced	ご依頼主_郵便番号	ご依頼主_都道府県_参照	ご依頼主_市町村_参照	ご依頼主_町村番地_参照					address_1	address_2	address_3				ご依頼主_郵便番号		1	7	01******
+	GetAddressInfoForced	１段目_お届け先_郵便番号	１段目_お届け先_都道府県_参照	１段目_お届け先_市町村_参照	１段目_お届け先_町村番地_参照					address_1	address_2	address_3				１段目_お届け先_郵便番号		1	7	01******
+	GetAddressInfoForced	２段目_お届け先_郵便番号	２段目_お届け先_都道府県_参照	２段目_お届け先_市町村_参照	２段目_お届け先_町村番地_参照					address_1	address_2	address_3				２段目_お届け先_郵便番号		1	7	01******
+	GetAddressInfoForced	３段目_お届け先_郵便番号	３段目_お届け先_都道府県_参照	３段目_お届け先_市町村_参照	３段目_お届け先_町村番地_参照					address_1	address_2	address_3				３段目_お届け先_郵便番号		1	7	01******

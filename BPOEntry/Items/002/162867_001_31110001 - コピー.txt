@@ -1,0 +1,27 @@
+ItemKind	ItemName	Location_Row	Location_Column	Required	InputMode	DefaultImeMode	MaxLength	Tips	Enabled	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	MultiLine	ForeColor	Visible	Input2	IsPostCd	Address1	Address2	Address3	AddressKana1	AddressKana2	AddressKana3	IsAgencyCd	HandlerCd	AgencyName	Handler_Last_Name	Handler_First_Name	Alignment	Square	MasterCheck	Conditional_Required_Item	Conditional_Required_Value	FullLength	CharacterCasing
+T	記入日				X		8	yyyymmdd、和暦は西暦に置き換えて入力	T							\d	T	1																		T					
+T	お名前_フリガナ				KH		120	姓と名の間に1スペース入れる。拗音・促音は文字では大文字（例：ﾕ→ユ）で入力	T							^[ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜｦﾝ ｰﾞﾟ]	T	2																							U
+T	お名前_漢字				N		120	姓と名の間に1スペース入れる	T								T	3																							
+T	お名前_アルファベット				X		120	ファースト/ミドル/ラストネームの間に1スペース入れる	T								T	4																							U
+T	生年月日				X		8	yyyymmdd、和暦は西暦に置き換えて入力	T							\d	T	5																		T					
+T	郵便番号				X		8	「-」ハイフン有、前3桁の場合のみ、後ろ4桁は0埋め入力　前3桁、後2桁の場合には後ろ2桁を0埋め入力	T							^[0-9\-]+$	T	6																		T					
+T	住所_フリガナ				KH		120	拗音・促音は文字では大文字（例：ﾕ→ユ）で入力	T							^[ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜｦﾝ ｰﾞﾟ1234567890]	T	7																							U
+T	住所_漢字_都道府県市区町村				N		50		T								T	8																							
+T	住所_漢字_丁目番地				N		150		T								T	9																							
+T	住所_漢字_建物名				N		50		T								T	10																							
+T	電話番号				X		14	「-」ハイフン有	T							^[0-9\-]+$	T	11																		T					
+T	携帯電話番号				X		14	「-」ハイフン有	T							^[0-9\-]+$	T	12																		T					
+T	勤務先				N		120		T								T	13																							
+T	勤務先電話番号				X		14	「-」ハイフン有	T							^[0-9\-]+$	T	14																		T					
+T	ご職業				X		150	コードをアンダーバーでつないで結合して入力（例：01_03_05）	T							^[0-9_]+$	T	15																							
+T	個人事業主/自営業　具体的な事業・業務内容				X		150	コードをアンダーバーでつないで結合して入力（例：01_03_05）	T							^[0-9_]+$	T	16																							
+T	国籍チェック				X		1	1：日本、2：日本以外、（ブランク）：チェック無し	T	^(|1|2)$						\d	T	17																							
+T	国籍コード				X		3		T								T	18																							
+T	在留資格				X		2	※在留資格一覧は、別途提示	T								T	19																							
+T	在留期限				X		8	yyyymmdd、和暦は西暦に置き換えて入力	T							\d	T	20																		T					
+T	お取引の目的				X		60	コードをアンダーバーでつないで結合して入力（例：01_03_05）	T							^[0-9_]+$	T	21																							
+T	取引有無				X		1	1：はい、2：いいえ、（ブランク）：チェック無し	T	^(|1|2)$						\d	T	22																							
+T	取引や資産の内容等				N		120		T								T	23																							
+T	制裁対象国-1				X		3		T								T	24																							
+T	制裁対象国-2				X		3		T								T	25																							
+T	制裁対象国-3				X		3		T								T	26																							

@@ -1,0 +1,4 @@
+ItemKind	ItemName	Location_Column	Location_Row	Required	InputMode	MaxLength	Tips	Enabled	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	MultiLine	ForeColor	Visible	Input2	IsPostCd	Address1	Address2	Address3	AddressKana1	AddressKana2	AddressKana3	IsAgencyCd	HandlerCd	AgencyName	Handler_Last_Name	Handler_First_Name	Alignment
+G		2	1							保全帳票（封筒以外）	850	900		001		T	1																	
+L		1	1							契約者名（カナ）：			001																					
+T	契約者名（カナ）	36	1		KF	90		T			88	328	001		^[\u30A1-\u30F4\u30FC）（]*$	T	2	T																

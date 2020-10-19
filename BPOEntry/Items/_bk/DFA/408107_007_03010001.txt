@@ -1,0 +1,46 @@
+﻿ItemKind	ItemName	Location_Column	Location_Row	Required	InputMode	MaxLength	Tips	Enabled	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	MultiLine	ForeColor	Visible	Input2	IsPostCd	Address	AddressKana	IsAgencyCd	HandlerCd	AgencyName	Handler_Last_Name	Handler_First_Name	Alignment
+G		2	1							アンケート記入欄	850	900		001		T	1													
+L		74	0							QR値：			001							F										
+L		1	1							証券番号：			001																	
+L		40	1							スキャン年月日：			001																	
+L		1	2.5							問１：			001																	
+L		1	4							問２：			001																	
+L		1	5.5							問３：			001																	
+L		1	7							問４：			001																	
+L		1	8.5							問５－１：			001																	
+L		1	10							問５－２：			001																	
+L		32	10							※複数選択項目			001						G											
+L		1	11.5							その他詳細１：			001																	
+L		1	17.5							問６：			001																	
+L		1	19							問７：			001																	
+L		1	20.5							問８：			001																	
+L		1	22							その他：			001																	
+L		38	22							※複数選択項目			001						G											
+L		1	23.5							その他詳細２：			001																	
+L		1	29.5							欄外記入：			001																	
+T		82	0		X	22		F					001							F										
+T		17	1		X	13		F					001																	
+T		58	1		X	8		F					001																	
+T	問１	17	2.5		X	1	1～5	T					001		^[1-5]$	T	1													
+T	問２	17	4		X	1	1～5	T					001		^[1-5]$	T	2													
+T	問３	17	5.5		X	1	1～5	T					001		^[1-5]$	T	3													
+T	問４	17	7		X	1	1～5	T					001		^[1-5]$	T	4													
+T	問５－１	17	8.5		X	1	1～5	T					001		^[1-5]$	T	5													
+T	問５－２	17	10		X	1	1～5	T					001		^[1-5]$	T	6													
+T	問５－２	20	10		X	1	1～5	T					001		^[1-5]$	T	7													
+T	問５－２	23	10		X	1	1～5	T					001		^[1-5]$	T	8													
+T	問５－２	26	10		X	1	1～5	T					001		^[1-5]$	T	9													
+T	問５－２	29	10		X	1	1～5	T					001		^[1-5]$	T	10													
+T	その他詳細１	17	11.5		H	201	※不明文字は＊（全角アスタリスク）を入力	T			110	740	001			T	11	T												
+T	問６	17	17.5		X	1	1～5	T					001		^[1-5]$	T	12													
+T	問７	17	19		X	1	1～5	T					001		^[1-5]$	T	13													
+T	問８	17	20.5		X	1	1～5	T					001		^[1-5]$	T	14													
+T	その他	17	22		X	1	1～7	T					001		^[1-7]$	T	15													
+T	その他	20	22		X	1	1～7	T					001		^[1-7]$	T	16													
+T	その他	23	22		X	1	1～7	T					001		^[1-7]$	T	17													
+T	その他	26	22		X	1	1～7	T					001		^[1-7]$	T	18													
+T	その他	29	22		X	1	1～7	T					001		^[1-7]$	T	19													
+T	その他	32	22		X	1	1～7	T					001		^[1-7]$	T	20													
+T	その他	35	22		X	1	1～7	T					001		^[1-7]$	T	21													
+T	その他詳細２	17	23.5		H	201	※不明文字は＊（全角アスタリスク）を入力	T			110	740	001			T	22	T												
+T	欄外記入	17	29.5		H	201	※不明文字は＊（全角アスタリスク）を入力	T			110	740	001			T	23	T												

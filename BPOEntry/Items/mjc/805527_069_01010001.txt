@@ -1,0 +1,2 @@
+ItemKind	ItemName	Location_Row	Location_Column	Required	InputMode	MaxLength	Tips	Enabled	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	MultiLine	ForeColor	Visible	Input2	IsPostCd	Address1	Address2	Address3	AddressKana1	AddressKana2	AddressKana3	IsAgencyCd	HandlerCd	AgencyName	Handler_Last_Name	Handler_First_Name	Alignment	TextAddMode	Square
+T	携帯電話番号				X	13									^\d	T	1																			T

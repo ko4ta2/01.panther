@@ -1,0 +1,6 @@
+TYPE	METHOD_NAME	ITEM_1	ITEM_2	ITEM_3	ITEM_4	ITEM_5	OUT_FLG_1	OUT_FLG_2	OUT_FLG_3	OUT_FLG_4	OUT_FLG_5	TRIGGER_ITEM	PARAMETER_ORDER
+住所コード取得	GetAddressCode	郵便番号	住所１	住所コード			0	1	1			住所１	123
+郵便番号から住所取得	GetAddressByZipCode	郵便番号	住所１	住所２			0	1	0			郵便番号	
+													
+													
+													

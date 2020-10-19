@@ -1,0 +1,10 @@
+ItemKind	ItemName	Location_Row	Location_Column	Required	InputMode	MaxLength	Tips	Enabled	Square	FullLength	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	MultiLine	ForeColor	Visible	Input2	Alignment	TextAddMode	CharacterCasing
+T	証券番号＋枝番	0	0	F	X	16	英数字	40010001	T								^[0-9a-zA-Z]	T	1							
+T	課店コード	0	0	F	X	4	数字	10010001,40010001	T								^\d	T	2							
+T	代理店コード	0	0	F	X	3	数字	10010001,40010001	T								^\d	T	3							
+T	契約者名	0	0	F	N	50	全角	40010001										T	4							
+T	分類番号	0	0	F	X	2	数字	30010001,40010001,50010001	T	T							^\d	T	5							
+T	印刷番号	0	0	F	X	8	数字	30010001,40010001,50010001	T								^\d	T	6							
+T	印刷番号連番	0	0	F	X	1	数字	30010001,40010001,50010001									^\d	T	7							
+T	訂正連絡票連番	0	0	F	X	7	数字	20010001,40010001	T								^\d	T	8							
+T	金融機関名	0	0	F	N	50	全角	40010001,50010001										T	9							

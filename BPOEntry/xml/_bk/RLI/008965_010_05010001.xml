@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntryItemRegions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--
+    [Usage]
+      Region.OriginX : 表示領域の原点(X座標)
+      Region.OriginY : 表示領域の原点(Y座標)
+      Region.Name    : その領域に含むコントロール名
+  -->
+  
+  <!-- 左上領域 -->
+  <Region OriginX="25"
+          OriginY="0">
+    <Name>text001</Name>
+    <Name>text002</Name>
+    <Name>text003</Name>
+    <Name>text004</Name>
+    <Name>text005</Name>
+    <Name>text006</Name>
+    <Name>text007</Name>
+    <Name>text008</Name>
+    <Name>text009</Name>
+    <Name>text010</Name>
+    <Name>text011</Name>
+    <Name>text012</Name>
+    <Name>text013</Name>
+    <Name>text014</Name>
+    <Name>text015</Name>
+    <Name>text016</Name>
+    <Name>text017</Name>
+    <Name>text018</Name>
+    <Name>text019</Name>
+    <Name>text020</Name>
+  </Region>
+  
+  <!-- 左下領域 -->
+  <Region OriginX="25"
+          OriginY="455">
+    <Name>text021</Name>
+    <Name>text022</Name>
+    <Name>text023</Name>
+    <Name>text024</Name>
+    <Name>text025</Name>
+    <Name>text026</Name>
+    <Name>text027</Name>
+    <Name>text028</Name>
+    <Name>text029</Name>
+    <Name>text030</Name>
+    <Name>text031</Name>
+    <Name>text032</Name>
+    <Name>text033</Name>
+    <Name>text034</Name>
+    <Name>text035</Name>
+  </Region>
+  
+  <!-- 右上領域 -->
+  <Region OriginX="1075"
+          OriginY="0">
+  </Region>
+  
+  <!-- 右下領域 -->
+  <Region OriginX="1075"
+          OriginY="455">
+  </Region>
+</EntryItemRegions>

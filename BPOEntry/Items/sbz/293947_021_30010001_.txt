@@ -1,0 +1,13 @@
+ItemKind	ItemName	Location_Row	Location_Column	Required	InputMode	MaxLength	Tips	Enabled	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	ForeColor	Visible	Alignment	CharacterCasing	FullLength	Square	JumpStop
+T	本人確認書類_氏名	1	1		N	50		T								T	1							
+T	本人確認書類_NAME	1	1		X	60		T								T	2							
+T	本人確認書類_生年月日	1	1		X	8	yyyymmddで入力\n不明文字記入・文字数オーバーの場合は入力値をブランクとする	T							^\d	T	3						T	
+T	本人確認書類_国籍	1	1		X	4		T							^\d	T	4						T	
+T	本人確認書類_国籍（その他）	1	1		N	20	『本人確認書類_国籍』が"9999"の場合、記載内容を見たままで入力	T								T	5							
+T	本人確認書類_在留資格	1	1		X	3	"901"（特別永住者）で固定	F							^\d	T	6						T	
+T	本人確認書類_在留期間の記載の有無	1	1		X	1	"2"で固定	F							^\d	T	7							
+T	本人確認書類_在留期間	1	1		X	8	ブランクで固定	F							^\d	T	8						T	
+T	本人確認書類_有効期限	1	1		X	8	yyyymmddで入力\n不明文字記入・文字数オーバーの場合は入力値をブランクとする	T							^\d	T	9						T	
+T	本人確認書類_就労制限	1	1		X	1	ブランクで固定	F							^\d	T	10							
+T	本人確認書類_発行番号	1	1		X	12		T								T	11						T	
+T	本人確認書類_交付年月日	1	1		X	8	ブランクで固定	F							^\d	T	12						T	

@@ -1,0 +1,14 @@
+ItemKind	ItemName	Location_Row	Location_Column	Required	InputMode	MaxLength	Tips	Enabled	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	ForeColor	Visible	CharacterCasing	FullLength	Square	JumpStop	Alignment
+T	事業者CD	1	1	T	X	9		T							^\d	T	1				T	T		
+T	事業者名フリガナ	1	1		KF	50		T								T	2							
+T	事業者名名称	1	1		N	50		T								T	3							
+T	担当者名フリガナ（セイ）	1	1		KF	50		T								T	4							
+T	担当者名フリガナ（メイ）	1	1		KF	50		T								T	5							
+T	担当者名（姓）	1	1		N	50		T								T	6							
+T	担当者名（名）	1	1		N	50		T								T	7							
+T	事業者郵便番号	1	1		X	7	ハイフン不要	T							^\d	T	8					T		
+T	事業者住所	1	1		N	100		T								T	9							
+T	事業者建物等	1	1		N	100		T								T	10							
+T	電話番号	1	1		X	11	ハイフン不要	T								T	11					T		
+T	割引給付申請件数	1	1		X	5		T							^\d	T	12							R
+T	補助申請請求合計金額	1	1		X	10		T							^\d	T	13							R

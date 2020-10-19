@@ -1,0 +1,42 @@
+ItemKind	ItemName	Location_Column	Location_Row	Required	InputMode	MaxLength	Tips	Enabled	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	MultiLine	ForeColor	Visible	Input2	IsPostCd	Address1	Address2	Address3	AddressKana1	AddressKana2	AddressKana3	IsAgencyCd	HandlerCd	AgencyName	Handler_Last_Name	Handler_First_Name	Alignment
+G		2	1							保険金支払後スキャン	850	900		001		T	1																	
+L		1	1							証券番号１：			001																					
+L		1	2.5							証券番号２：			001																					
+L		1	4							証券番号３：			001																					
+L		1	5.5							証券番号４：			001																					
+L		1	7							証券番号５：			001																					
+L		1	8.5							証券番号６：			001																					
+L		1	10							証券番号７：			001																					
+L		1	11.5							証券番号８：			001																					
+L		1	13							証券番号９：			001																					
+L		1	14.5							証券番号１０：			001																					
+L		1	16							請求受付番号１：			001																					
+L		1	17.5							請求受付番号２：			001																					
+L		1	19							請求受付番号３：			001																					
+L		1	20.5							請求受付番号４：			001																					
+L		1	22							請求受付番号５：			001																					
+L		1	23.5							請求受付番号６：			001																					
+L		1	25							請求受付番号７：			001																					
+L		1	26.5							請求受付番号８：			001																					
+L		1	28							請求受付番号９：			001																					
+L		1	29.5							請求受付番号１０：			001																					
+T	証券番号１	36	1		X	8		T					001		^\d	T	2																	
+T	証券番号２	36	2.5		X	8		T					001		^\d	T	3																	
+T	証券番号３	36	4		X	8		T					001		^\d	T	4																	
+T	証券番号４	36	5.5		X	8		T					001		^\d	T	5																	
+T	証券番号５	36	7		X	8		T					001		^\d	T	6																	
+T	証券番号６	36	8.5		X	8		T					001		^\d	T	7																	
+T	証券番号７	36	10		X	8		T					001		^\d	T	8																	
+T	証券番号８	36	11.5		X	8		T					001		^\d	T	9																	
+T	証券番号９	36	13		X	8		T					001		^\d	T	10																	
+T	証券番号１０	36	14.5		X	8		T					001		^\d	T	11																	
+T	請求受付番号１	36	16		X	10		T					001		^\d	T	12																	
+T	請求受付番号２	36	17.5		X	10		T					001		^\d	T	13																	
+T	請求受付番号３	36	19		X	10		T					001		^\d	T	14																	
+T	請求受付番号４	36	20.5		X	10		T					001		^\d	T	15																	
+T	請求受付番号５	36	22		X	10		T					001		^\d	T	16																	
+T	請求受付番号６	36	23.5		X	10		T					001		^\d	T	17																	
+T	請求受付番号７	36	25		X	10		T					001		^\d	T	18																	
+T	請求受付番号８	36	26.5		X	10		T					001		^\d	T	19																	
+T	請求受付番号９	36	28		X	10		T					001		^\d	T	20																	
+T	請求受付番号１０	36	29.5		X	10		T					001		^\d	T	21																	

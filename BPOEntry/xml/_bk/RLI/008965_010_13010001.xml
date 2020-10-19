@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntryItemRegions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--
+    [Usage]
+      Region.OriginX : 表示領域の原点(X座標)
+      Region.OriginY : 表示領域の原点(Y座標)
+      Region.Name    : その領域に含むコントロール名
+  -->
+  
+  <!-- 左上領域 -->
+  <Region OriginX="25"
+          OriginY="0">
+	<!-- 申込記入日 -->
+    <Name>text001</Name>
+	<!-- 申込番号 -->
+	<Name>text002</Name>
+	<!-- 意向把握 -->
+	<Name>text003</Name>
+	<!-- 意向確認 -->
+	<Name>text004</Name>
+	<Name>text005</Name>
+	<Name>text006</Name>
+	<Name>text007</Name>
+	<!-- 取扱者記入欄-->
+	<Name>text008</Name>
+	<Name>text009</Name>
+	<Name>text010</Name>
+	<Name>text011</Name>
+	<Name>text012</Name>
+	<!-- 保険契約者 -->
+	<Name>text013</Name>
+	<Name>text014</Name>
+	<Name>text015</Name>
+	<Name>text016</Name>
+	<Name>text017</Name>
+	<Name>text018</Name>
+	<Name>text019</Name>
+	<Name>text020</Name>
+	<Name>text021</Name>
+	<Name>text022</Name>
+	<Name>text023</Name>
+	<Name>text024</Name>
+	<Name>text025</Name>
+	<Name>text026</Name>
+	<Name>text027</Name>
+	<Name>text028</Name>
+	<Name>text029</Name>
+	<Name>text030</Name>
+	<Name>text031</Name>
+	<Name>text032</Name>
+	<Name>text033</Name>
+
+  </Region>
+  
+  <!-- 左下領域 -->
+  <Region OriginX="25"
+          OriginY="455">
+	<!-- 申込内容 -->
+	<Name>text034</Name>
+	<Name>text035</Name>
+	<Name>text036</Name>
+	<Name>text037</Name>
+	<Name>text038</Name>
+	<!-- 申込書受領日 1-->
+	<Name>text039</Name>
+  </Region>
+  
+  <!-- 右上領域 -->
+  <Region OriginX="1075"
+          OriginY="0">
+	<!-- 指定代理請求特約 9-->
+	<Name>text040</Name>
+	<Name>text041</Name>
+	<Name>text042</Name>
+	<Name>text043</Name>
+	<Name>text044</Name>
+	<Name>text045</Name>
+	<Name>text046</Name>
+	<Name>text047</Name>
+	<Name>text048</Name>
+  </Region>
+  
+  <!-- 右下領域 -->
+  <Region OriginX="1075"
+          OriginY="455">
+	<!-- 支払方法 22-->
+	<Name>text049</Name>
+	<Name>text050</Name>
+	<Name>text051</Name>
+	<Name>text052</Name>
+	<Name>text053</Name>
+	<Name>text054</Name>
+	<Name>text055</Name>
+	<Name>text056</Name>
+	<Name>text057</Name>
+	<Name>text058</Name>
+	<Name>text059</Name>
+	<Name>text060</Name>
+	<Name>text061</Name>
+	<Name>text062</Name>
+	<Name>text063</Name>
+	<Name>text064</Name>
+	<Name>text065</Name>
+	<Name>text066</Name>
+	<Name>text067</Name>
+	<Name>text068</Name>
+	<Name>text069</Name>
+	<Name>text070</Name>
+	<!-- 金融機関 2-->
+	<Name>text071</Name>
+	<Name>text072</Name>
+	<!-- 文書番号 4-->
+	<Name>text073</Name>
+	<Name>text074</Name>
+	<Name>text075</Name>
+	<Name>text076</Name>
+	<!-- 未使用 -->
+	<Name>text077</Name>
+	<Name>text078</Name>
+	<Name>text079</Name>
+	<Name>text080</Name>
+	<Name>text081</Name>
+	<Name>text082</Name>
+	<Name>text083</Name>
+	<Name>text084</Name>
+	<Name>text085</Name>
+	<Name>text086</Name>
+	<Name>text087</Name>
+	<Name>text088</Name>
+	<Name>text089</Name>
+	<Name>text090</Name>
+	<Name>text091</Name>
+	<Name>text092</Name>
+	<Name>text093</Name>
+	<Name>text094</Name>
+	<Name>text095</Name>
+	<Name>text096</Name>
+	<Name>text097</Name>
+	<Name>text098</Name>
+	<Name>text099</Name>
+	<Name>text100</Name>
+  </Region>
+</EntryItemRegions>

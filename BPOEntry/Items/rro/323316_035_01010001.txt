@@ -1,0 +1,23 @@
+ItemKind	ItemName	Location_Row	Location_Column	Required	InputMode	MaxLength	Tips	Enabled	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	MultiLine	ForeColor	Visible	Input2	IsPostCd	Address	AddressKana	IsAgencyCd	HandlerCd	AgencyName	Handler_Last_Name	Handler_First_Name	Alignment	CharacterCasing
+T	帳票形態不備	1	1		X	1	1:不備あり	T	^(|1)$						^\d	T	1														
+T	希望銘柄１	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	2														
+T	希望銘柄２	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	3														
+T	希望銘柄３	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	4														
+T	希望銘柄４	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	5														
+T	希望銘柄５	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	6														
+T	希望銘柄６	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	7														
+T	希望銘柄７	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	8														
+T	希望銘柄８	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	9														
+T	希望銘柄９	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	10														
+T	希望銘柄１０	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	11														
+T	希望銘柄１１	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	12														
+T	希望銘柄１２	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	13														
+T	希望銘柄１３	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	14														
+T	希望銘柄１４	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	15														
+T	希望銘柄１５	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	16														
+T	希望銘柄１６	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	17														
+T	希望銘柄１７	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	18														
+T	希望銘柄１８	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	19														
+T	希望銘柄１９	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	20														
+T	希望銘柄２０	1	1		X	1	1：チェックあり	T	^(|1)$						^\d	T	21														
+T	QR	1	1		X	13		F							^\d	T	22														
