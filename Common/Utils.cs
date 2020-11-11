@@ -749,5 +749,37 @@ namespace Common
         {
             return value;
         }
+
+        public static bool IsValidCheckDigit(string value)
+        {
+            try
+            {
+                //#region 未チェック条件
+                //if (value.Contains(Config.ReadNotCharNarrowInput))
+                //    return true;
+                //#endregion
+
+                if (value.Length != 12)
+                    throw new ApplicationException();
+
+                var conv = new string[] { null, "B", "C", "H", "K", "M", "R", "U", "X", "Y", "Z", "A" };
+                if (!conv.Contains(value.Substring(10, 1)))
+                    throw new ApplicationException();
+
+                var S = 0;
+                for (int idx = 0; idx <= 9; idx++)
+                    S += int.Parse(value.Substring(idx, 1)) * (10 - idx);
+
+                var D = 11 - S % 11;
+                if (!conv[D].Equals(value.Substring(10, 1)))
+                    throw new ApplicationException();
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

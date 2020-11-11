@@ -69,6 +69,9 @@ namespace BPOEntry.EntryForms
 
         // イメージ表示画面
         private FrmImage _ImgForm = null;
+
+        private string _TextBoxName = null;
+
         #endregion
 
         //public frmBPOReEntry(frmBPOImage imgForm, string DOC_ID, string IMAGE_CAPTURE_DATE, string IMAGE_CAPTURE_NUM, string ENTRY_UNIT, string IMAGE_SEQ, string ITEM_ID,
@@ -78,6 +81,7 @@ namespace BPOEntry.EntryForms
         {
             InitializeComponent();
 
+            _TextBoxName = tb.Name;
             this.Text = Utils.GetFormText();
 
             this._ImgForm = IMAGE_FORM;
@@ -896,6 +900,26 @@ namespace BPOEntry.EntryForms
             }
             #endregion
 
+            switch (Utils.GetBussinessId())
+            {
+                case Consts.BusinessID.NTO:
+                    // 早稲田大学　成績請求票
+                    if ("10010001".Equals(this.DocId) && "TEXT001".Equals(_TextBoxName.ToUpper()))
+                    {
+                        if (tb.Text.Contains(Config.ReadNotCharNarrowInput))
+                        {
+                            MessageBox.Show("成績請求コードに判読不可文字が入力されています。", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            return;
+                        }
+                        else if (!Utils.IsValidCheckDigit(tb.Text))
+                        {
+                            MessageBox.Show("成績請求コードが不正です。", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            e.Cancel = true;
+                            return;
+                        }
+                    }
+                    break;
+            }
             tb.BackColor = SystemColors.Window;
         }
 

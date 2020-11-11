@@ -91,9 +91,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Chartreuse;
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.images;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(22, 26);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(174, 149);
+            this.pictureBox1.Size = new System.Drawing.Size(306, 217);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;

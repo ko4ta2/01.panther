@@ -212,9 +212,6 @@
       <DependentUpon>FrmDivEntryUnit.cs</DependentUpon>
     </Compile>
     <Compile Include="DivEntryUnit\DivEntryUnitDivider.cs" />
-    <Compile Include="Entry\FrmEntry.Action.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Entry\FrmEntry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -491,6 +488,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Items\NGS_\608369_004_10000001.txt" />
+    <Content Include="Items\nto\996529_003_10010001.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Items\pva\975851_002_01010001.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

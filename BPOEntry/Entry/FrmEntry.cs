@@ -9,6 +9,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -38,7 +39,7 @@ namespace BPOEntry.EntryForms
         /// GroupBox
         /// </summary>
         private GroupBox[] _gbs = null;
-        private Button[] _btns = null;
+        //private Button[] _btns = null;
         /// <summary>
         /// PictureBox
         /// </summary>
@@ -274,6 +275,9 @@ namespace BPOEntry.EntryForms
         //private int ProcessorCount = Environment.ProcessorCount;
 
         private bool IsMerpay = false;
+
+
+        private bool IsFormShown = false;
         #endregion
 
         /// <summary>
@@ -396,6 +400,7 @@ namespace BPOEntry.EntryForms
                         break;
                     }
                 }
+                IsFormShown = true;
             }
             //else
             //{
@@ -521,11 +526,11 @@ namespace BPOEntry.EntryForms
                 }
             }
 
-            foreach (var tb in this._btns.AsEnumerable())
-            {
-                if (tb != null)
-                    tb.Click += new EventHandler(Button_Click);
-            }
+            //foreach (var tb in this._btns.AsEnumerable())
+            //{
+            //    if (tb != null)
+            //        tb.Click += new EventHandler(Button_Click);
+            //}
 
             IgnoreControls = new Control[] { ButtonClose, ButtonBack/*, chkAutoScroll*/ }.ToList();
 
@@ -956,7 +961,7 @@ namespace BPOEntry.EntryForms
                                          , this._tbs[i - 1].Text.Trim()
                                          , this._tbs[i - 1].Tag.ToString()
                                          , this._tbs[i - 1].IsDummyItem ? Consts.Flag.ON : Consts.Flag.OFF
-                						 , this._tbs[i - 1].DummyItemFlag
+                                         , this._tbs[i - 1].DummyItemFlag
 
                 };
                 /*
@@ -1839,14 +1844,22 @@ namespace BPOEntry.EntryForms
             //if (Consts.Flag.ON.Equals(this._sUpdateFlag)
             if (Consts.RecordKbn.ADMIN.Equals(this._RECORD_KBN) && !_IsVerifyMode)
             {
-                //for (int iIdx = 0; iIdx <= this._tbs.Length - 1; iIdx++)
-                //{
-                //    if (this._tbs[iIdx].Enabled)
-                //    {
-                //        this._tbs[iIdx].Focus();
-                //        break;
-                //    }
-                //}
+                if (IsFormShown)
+                {
+                    TextDummy.Enabled = true;
+                    TextDummy.Visible = true;
+                    TextDummy.Focus();
+                    TextDummy.Enabled = false;
+                    TextDummy.Visible = false;
+                    for (int iIdx = 0; iIdx <= this._tbs.Length - 1; iIdx++)
+                    {
+                        if (this._tbs[iIdx].Enabled)
+                        {
+                            this._tbs[iIdx].Focus();
+                            break;
+                        }
+                    }
+                }
             }
             else
             {
@@ -1905,12 +1918,12 @@ namespace BPOEntry.EntryForms
                     tb.Enter -= TextBox_Enter;
                 }
             }//);
-            
-            foreach (var btn in this._btns.AsEnumerable())
-            {
-                if (btn != null)
-                    btn.Click -= new System.EventHandler(Button_Click);
-            }
+
+            //foreach (var btn in this._btns.AsEnumerable())
+            //{
+            //    if (btn != null)
+            //        btn.Click -= new System.EventHandler(Button_Click);
+            //}
 
             // テーブルレイアウトパネルのスクロール
             this.TableLayoutPanel.Scroll -= TableLayoutPanel_Scroll;
@@ -2129,8 +2142,32 @@ namespace BPOEntry.EntryForms
             }
             #endregion
 
+            if (!Consts.RecordKbn.ADMIN.Equals(this._RECORD_KBN) && !_IsVerifyMode)
+            {
+                switch (Utils.GetBussinessId())
+                {
+                    case Consts.BusinessID.NTO:
+                        // 早稲田大学　成績請求票
+                        if ("10010001".Equals(this._DOC_ID) && "TEXT001".Equals(tb.Name.ToUpper()))
+                        {
+                            if (_tbs[0].Text.Contains(Config.ReadNotCharNarrowInput))
+                            {
+                                MessageBox.Show("成績請求コードに判読不可文字が入力されています。", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                return;
+                            }
+                            else if (!Utils.IsValidCheckDigit(_tbs[0].Text))
+                            {
+                                MessageBox.Show("成績請求コードが不正です。", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                e.Cancel = true;
+                                return;
+                            }
+                        }
+                        break;
+                }
+            }
+
             #region 第一フロンティア生命　解約請求　固有処理
-            if (this._RECORD_KBN != Consts.RecordKbn.ADMIN)
+            if (!Consts.RecordKbn.ADMIN.Equals(this._RECORD_KBN))
             {
                 switch (Utils.GetBussinessId())
                 {
@@ -2641,7 +2678,7 @@ namespace BPOEntry.EntryForms
 
                     // 画面で記憶する差異フラグを0に更新する
                     dicDiffCount[textBox] = Consts.Flag.OFF;
-    
+
                     // 修正状態を見て登録ボタンを制御
                     CheckDiffCount();
 
@@ -2748,7 +2785,7 @@ namespace BPOEntry.EntryForms
                         this._ImgForm.ImaegPostion_Y_Value = 0;
                     }
                     this._ImgForm.PanelImage_AutoScrollPosition = new Point(this._ImgForm.ImaegPostion_X_Value, this._ImgForm.ImaegPostion_Y_Value);
-                    e.Handled = true;
+                    //e.Handled = true;
                     break;
                 case Keys.F3:
                     // F3　→スクロール
@@ -2830,7 +2867,7 @@ namespace BPOEntry.EntryForms
                     //if ((Control.ModifierKeys & Keys.Shift) == Keys.Shift) { forward = false; }
                     if (Consts.Flag.ON.Equals(Config.COSMOS_FLAG))
                     {
-                        this._ImgForm.IsShowBaseImageValue= !this._ImgForm.IsShowBaseImageValue;
+                        this._ImgForm.IsShowBaseImageValue = !this._ImgForm.IsShowBaseImageValue;
                     }
                     else
                     {
@@ -4000,7 +4037,7 @@ namespace BPOEntry.EntryForms
             drs = dtTxt.Select("ItemKind='T'");
             this._tbs = new CTextBox.CTextBox[drs.Length];
             this._gbs = new GroupBox[drs.Length];
-            this._btns = new Button[drs.Length];
+            //this._btns = new Button[drs.Length];
             this._pbs = new PictureBox[drs.Length];
 
             this.TableLayoutPanel.Left = 20;
@@ -4041,9 +4078,9 @@ namespace BPOEntry.EntryForms
 
             var ItemNumber = 0;
 
-            foreach (var dr in drs.AsEnumerable()) 
-               {
-                   this._gbs[ItemNumber] = new GroupBox();
+            foreach (var dr in drs.AsEnumerable())
+            {
+                this._gbs[ItemNumber] = new GroupBox();
                 this._tbs[ItemNumber] = new CTextBox.CTextBox();
                 this._pbs[ItemNumber] = new PictureBox();
 
@@ -4769,9 +4806,9 @@ namespace BPOEntry.EntryForms
                 this.TableLayoutPanel.RowStyles.Add(new RowStyle());
                 this.TableLayoutPanel.Controls.Add(_gbs[ItemNumber], 0, ItemNumber);
                 this.TableLayoutPanel.RowStyles[ItemNumber] = new RowStyle(SizeType.Absolute, 0.0f);
-                       ItemNumber++;
-                   }
-               //});
+                ItemNumber++;
+            }
+            //});
 
             _log.Debug("TextBox 設定終了");
             dtTxt.Columns.Add("ItemSeq");
@@ -4796,16 +4833,16 @@ namespace BPOEntry.EntryForms
                 this._gbs[iItemSeq].Controls.Add(this._tbs[int.Parse(drTxt["ItemSeq"].ToString()) - 1]);
                 this._gbs[iItemSeq].Tag = (int.Parse(drTxt["ItemSeq"].ToString()) - 1).ToString();
 
-                if (iItemSeq == 10)
-                {
-                    this._btns[iItemSeq] = new Button();//
-                    this._btns[iItemSeq].Text = "住所クリア";
-                    this._btns[iItemSeq].TabStop=false;
-                    this._btns[iItemSeq].BackColor=System.Drawing.SystemColors.Control;
-                    this._btns[iItemSeq].Width = 180;
-                    this._btns[iItemSeq].Height = 40;
-                    this._gbs[iItemSeq].Controls.Add(this._btns[iItemSeq]);
-                }
+                //if (iItemSeq == 10)
+                //{
+                //    this._btns[iItemSeq] = new Button();//
+                //    this._btns[iItemSeq].Text = "住所クリア";
+                //    this._btns[iItemSeq].TabStop = false;
+                //    this._btns[iItemSeq].BackColor = System.Drawing.SystemColors.Control;
+                //    this._btns[iItemSeq].Width = 180;
+                //    this._btns[iItemSeq].Height = 40;
+                //    this._gbs[iItemSeq].Controls.Add(this._btns[iItemSeq]);
+                //}
                 iItemSeq++;
             }
             _log.Debug("ItemSeqSort 終了");
@@ -5050,11 +5087,11 @@ namespace BPOEntry.EntryForms
                         this._tbs[iGroupBoxIdx].ReadOnly = true;
                     }
 
-                    if (_btns[iGroupBoxIdx] != null)
-                    {
-                        _btns[iGroupBoxIdx].Top = _tbs[iGroupBoxIdx].Top;
-                        _btns[iGroupBoxIdx].Left = _tbs[iGroupBoxIdx].Left+ _tbs[iGroupBoxIdx].Width + 24;
-                    }
+                    //if (_btns[iGroupBoxIdx] != null)
+                    //{
+                    //    _btns[iGroupBoxIdx].Top = _tbs[iGroupBoxIdx].Top;
+                    //    _btns[iGroupBoxIdx].Left = _tbs[iGroupBoxIdx].Left + _tbs[iGroupBoxIdx].Width + 24;
+                    //}
                 }
                 else
                 {

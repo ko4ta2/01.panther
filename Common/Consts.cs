@@ -308,6 +308,11 @@ namespace Common
             /// 明治安田生命
             /// </summary>
             public const string MYD = "915221_026";
+
+            /// <summary>
+            /// 早稲田大学
+            /// </summary>
+            public const string NTO = "996529_003";
         }
 
         /// <summary>
