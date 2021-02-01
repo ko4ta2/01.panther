@@ -1,6 +1,0 @@
-ItemKind	ItemName	Location_Row	Location_Column	Required	InputMode	MaxLength	Tips	Enabled	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	MultiLine	ForeColor	Visible	Input2	IsPostCd	Address1	Address2	Address3	AddressKana1	AddressKana2	AddressKana3	IsAgencyCd	HandlerCd	AgencyName	Handler_Last_Name	Handler_First_Name	Alignment	Square
-T	項目００１	1	1		X	10		T								T	1																		T
-T	項目００２	1	1		X	10		T								T	2																		T
-T	項目００３	1	1		X	10		T								T	3																		T
-T	項目００４	1	1		X	10		T								T	4																		T
-T	項目００５	1	1		X	10		T								T	5																		T

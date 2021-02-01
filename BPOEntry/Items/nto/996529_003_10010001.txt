@@ -1,2 +1,0 @@
-ItemKind	ItemName	Location_Row	Location_Column	Required	InputMode	DefaultImeMode	MaxLength	Tips	Enabled	Mailaddress	DateFormat	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	DummyItem	Square	FullLength	CharacterCasing	ReadOnly	MultiLine	ForeColor	Visible	Input2	Alignment	MasterCheck	Conditional_Required_Item	JumpTab
-T	成績請求コード	1	1	T	X		12		T			^[1234567890BCHKMRUXYZAbchkmruxyza]*$							T	1		T	T	U									

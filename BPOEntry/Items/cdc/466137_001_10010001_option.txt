@@ -1,2 +1,0 @@
-TYPE	METHOD_NAME	ITEM_1	ITEM_2	ITEM_3	ITEM_4	ITEM_5	ITEM_6	ITEM_7	OUT_1	OUT_2	OUT_3	OUT_4	OUT_5	OUT_6	OUT_7	TRIGGER_ITEM	PARAMETER_ORDER	IsCOLNAME	PARAMCNT	TARGET_DOC_ID	CodeDefineSection	ForcedSubstitution
-	GetAddressInfo	送付先郵便番号	送付先都道府県	送付先市区町村	送付先町域	送付先丁目				address_1	address_2	address_3	address_4			送付先郵便番号		1	7	20******,30******,40******		

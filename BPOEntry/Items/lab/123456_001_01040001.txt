@@ -1,7 +1,0 @@
-ItemKind	ItemName	TabIndex	InputMode	MaxLength	Tips	ValidPattern	Regex	Required	FullLength	Square
-T	店コード	1	X	6				T	T	T
-T	作業日	2	X	8			^\d	T	T	T
-T	POT#1バーコード値	3	N	16					T	T
-T	POT#1シリアル№	4	X	16					T	T
-T	POT#2バーコード値	5	X	16					T	T
-T	POT#2シリアル№	6	X	16					T	T

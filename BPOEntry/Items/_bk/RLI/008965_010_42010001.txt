@@ -1,4 +1,0 @@
-ItemKind	ItemName	Location_Column	Location_Row	Required	InputMode	MaxLength	Tips	Enabled	ValidPattern	Text	Height	Width	GroupBox	ControlName	Regex	TabStop	TabIndex	MultiLine	ForeColor	Visible	Input2	IsPostCd	Address1	Address2	Address3	AddressKana1	AddressKana2	AddressKana3	IsAgencyCd	HandlerCd	AgencyName	Handler_Last_Name	Handler_First_Name	Alignment
-G		2	1							返信用封筒（保全不備戻り）	850	900		001		T	1																	
-L		1	1							初回封筒番号：			001																					
-T	初回封筒番号	36	1		X	13		T					001		^\d	T	2																	

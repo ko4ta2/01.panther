@@ -1,3 +1,0 @@
-TYPE	METHOD_NAME	ITEM_1	ITEM_2	ITEM_3	ITEM_4	ITEM_5	ITEM_6	ITEM_7	OUT_1	OUT_2	OUT_3	OUT_4	OUT_5	OUT_6	OUT_7	TRIGGER_ITEM	PARAMETER_ORDER	IsCOLNAME	PARAMCNT
-	GetAddressInfo	郵便番号	ご住所１	ご住所２	ご住所３	ご住所４	ご住所５			address_1,address_2,address_3						郵便番号		1	7
-	SetValueByCode	ドメイン	メールアドレス（ドメイン）							1						ドメイン			

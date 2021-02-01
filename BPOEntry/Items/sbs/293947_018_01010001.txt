@@ -1,4 +1,0 @@
-ItemKind	ItemName	TabIndex	InputMode	MaxLength	Tips	Enabled	ValidPattern	Regex	TabStop	Text	MultiLine	ForeColor	Visible	Input2	IsAgencyCd	HandlerCd	Alignment	CharacterCasing	TextAddMode	Location_Row	Location_Column	Height	Width	GroupBox	ControlName	Square	ReadOnly	Conditional_Required_Item	Conditional_Required_Value	Conditional_Required_Omit_Value	Required	FullLength	DR
-T	「Web総合口座」への切替	1	X	1	1:チェックあり	T	^(|1)$	^\d	T											1	1												
-T	「通帳扱口座」への切替	2	X	1	1:チェックあり	01010001	^(|1)$	^\d	T											1	1												
-T	「ステートメント型総合口座」の継続	3	X	1	1:チェックあり	T	^(|1)$	^\d	T											1	1												

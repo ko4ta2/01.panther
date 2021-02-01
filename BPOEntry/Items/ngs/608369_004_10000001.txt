@@ -1,2 +1,0 @@
-ItemKind	ItemName	TabIndex	InputMode	MaxLength	Tips	ValidPattern	Regex	Required	FullLength	Square	Enabled
-T	点数1	1	X	3	点数1箇所目		^\d			T	T
